@@ -1,0 +1,161 @@
+# Git Command
+=================
+
+1) Check git version
+    git --version
+
+2) Get a help in git
+    git --help
+
+3) Initialize a local Git repository
+    git init
+
+4) Check Status
+    git status
+
+5) Add file to staging area
+    git add .
+
+6) Commit change
+    git commit -m "[commit message]"
+
+7) Commit changes to direct repository
+    git commit -m "[commit message]"
+
+8) Remove file or folder
+    git rm -r [file-name.txt]
+
+9) Shows number of commit
+    git log -n [number]
+
+10) List branches (the asterisk denotes the current branch)
+    git branch
+
+11) List all branches (local and remote)
+    git branch -a
+
+12) Create a new branch
+    git branch [branch_name]
+
+13) Delete a branch
+    git branch -d [branch_name]
+
+14) Delete a remote branch
+    git push origin --delete [branch name]
+
+15) Create a new branch and switch to it
+    git checkout -b [branch_name]
+
+16) Clone a remote branch and switch to it
+    git checkout -b [branch name] origin/[branch name]
+
+17) Rename a local branch
+    git branch -m [old_branch_name][new_branch_name]
+
+18) Switch to a branch
+    git checkout [branch_name]
+
+19) Switch to the branch last checked out
+    git checkout -
+
+20) Discard changes to a file
+    git checkout -- [file-name.txt]
+
+21) Merge a branch into the active branch
+    git merge [branch_name]
+
+22) Merge a branch into a target branch
+    git merge [source branch] [target branch]
+
+23) Stash changes in a dirty working directory
+    git stash
+
+24) Remove all stashed entries
+    git stash clear
+
+25) Push a branch to your remote repository
+    git push origin [branch name]
+
+26) Push changes to remote repository (and remember the branch)
+    git push -u origin [branch name]
+
+27) Push changes to remote repository (remembered branch)
+    git push
+
+28) Delete a remote branch
+    git push origin --delete [branch name]
+
+29) Update local repository to the newest commit
+    git pull
+
+30) Pull changes from remote repository
+    git pull origin [branch name]
+
+31) Add a remote repository
+    git remote add origin ssh://git@github.com/[username]/[repository-name].git
+
+32) Set a repository's origin branch to SSH
+    git remote set-url origin ssh://git@github.com/[username]/[repository-name].git
+
+33) View changes
+    git log
+
+34) View changes (detailed)
+    git log --summary
+
+35) View changes (briefly)
+    git log --oneline
+
+36) Preview changes before merging
+    git diff [source branch] [target branch]
+
+37)
+    git diff --staged
+
+38)
+    git diff
+
+39)
+    git diff --color-words
+
+40)
+    git dif commit [6digit]..[6digit] --color-words
+
+41)
+    git rm --cached [file_name.txt]
+
+42)
+    git commit -a
+    git commit -all
+
+
+# list of things to be ignore by git
+======================================
+
+1) packages and compressed file
+
+2) logs and database
+
+3) OS generated file
+
+4) user uploaded file like (assets/PDF/videos/images) etc
+
+# two ways to delete file
+==========================
+
+1) using Command line
+    git rm [file_name]
+    git commit
+
+2) direct delete file from computer
+    git rm [file_name]
+    git add .
+
+# two ways to moving/rename file
+=================================
+1) using Command line
+    git mv [file_name] [folder_name]/[file_name]
+
+2) direct delete file from computer
+    git add [file_name]
+    git rm [old_file_name]
